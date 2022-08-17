@@ -1,0 +1,16 @@
+<?php
+
+namespace Qalis\Shared\Infrastructure\Persistence\Eloquent\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class Offer extends Model
+{
+    protected $table = "offers";
+    protected $guarded = [];
+    use softDeletes;
+    use UuidTrait;
+
+
+}
