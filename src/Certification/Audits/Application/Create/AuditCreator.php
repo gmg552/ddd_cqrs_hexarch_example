@@ -33,7 +33,7 @@ class AuditCreator {
     {
         $this->ensureSchemeIsNotCancelled($operatorId, $auditSchemeId);
 
-        $audit = Audit::create(
+        $audit = Audit::createFromPrimitives(
             $id,
             $operatorId,
             $auditSchemeId
