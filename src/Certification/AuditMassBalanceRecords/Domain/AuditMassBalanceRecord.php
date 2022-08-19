@@ -7,14 +7,14 @@ namespace Qalis\Certification\AuditMassBalanceRecords\Domain;
 use Qalis\Certification\Shared\Domain\AuditMassBalanceRecords\AuditMassBalanceRecordId;
 use Qalis\Certification\Shared\Domain\Audits\AuditId;
 use Qalis\Certification\Shared\Domain\Products\ProductId;
-
+use Qalis\Shared\Domain\Aggregate\AggregateRoot;
 
 /**
  * Audit mass balance record
  * @author Guillermo Martínez García <gmg552@gmail.com>
  * @access public
  */
-class AuditMassBalanceRecord
+class AuditMassBalanceRecord extends AggregateRoot
 {
     private AuditMassBalanceRecordId $id;
     private ProductId $productId;

@@ -8,6 +8,7 @@ use Qalis\Certification\Shared\Domain\Audits\AuditId;
 use Qalis\Certification\Shared\Domain\AuditTypes\AuditTypeId;
 use Qalis\Certification\Shared\Domain\Operators\OperatorId;
 use Qalis\Certification\Shared\Domain\Schemes\SchemeId;
+use Qalis\Shared\Domain\Aggregate\AggregateRoot;
 use Qalis\Shared\Domain\ValueObjects\DateValueObject;
 
 /**
@@ -16,7 +17,7 @@ use Qalis\Shared\Domain\ValueObjects\DateValueObject;
  * @author Guillermo Martinez García <gmg552@gmail.com>
  * @access public
  */
-class Audit
+class Audit extends AggregateRoot
 {
     private AuditId $id;
     private OperatorId $operatorId;
